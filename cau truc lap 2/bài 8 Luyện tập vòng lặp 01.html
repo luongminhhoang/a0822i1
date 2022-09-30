@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="hoang()"> click me</button>
+<script>
+function hoang (){
+  let random = Math.round(Math.random()*100)
+  let number =parseInt(prompt("nhập số đoán"))
+  while (number!=random){
+      if (number==random){
+        document.write("bạn đã đoán đúng")
+      }else if (number < random){
+        alert("Số dự đoán nhỏ hơn số bí mật");
+        number =parseInt(prompt("nhập số đoán"))
+      }else {
+        alert("Số dự đoán lớn hơn số bí mật");
+        number =parseInt(prompt("nhập số đoán"))
+      }
+  }
+}
+</script>
+</body>
+</html>

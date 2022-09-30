@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let f=0,f1=1,f2;
+  let sum=0;
+  for (let i = 0; i < 20; i++) {
+
+    f2 = f + f1;
+    f=f1;
+    f1=f2;
+  sum +=f1;
+  }
+  document.write(sum)
+</script>
+</body>
+</html>
